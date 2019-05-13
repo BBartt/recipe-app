@@ -1,0 +1,40 @@
+$bdrs: 5px;
+
+.recipe{
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: $bdrs;
+  margin: 10px;
+  flex-basis: 28%;
+
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .ingredients{
+    margin: 0;
+    color: brown;
+  }
+
+  .img{
+    border-radius: $bdrs;
+  }
+
+  .btn{
+    cursor: pointer;
+    background: linear-gradient(30deg, rgba(46,158,159,1) 0%, rgba(235,255,33,1) 100%);
+    border: none;
+    border-radius: $bdrs;
+    padding: 15px 20px;
+    margin: 10px;
+    color: white;
+    outline: none;
+    opacity: 0.7;
+
+    &:hover{
+      opacity: 1;
+    }
+  }
+}

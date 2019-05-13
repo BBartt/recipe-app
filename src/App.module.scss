@@ -1,0 +1,66 @@
+body{
+  font-family: Sans-Serif;
+  background-color: rgb(44, 46, 42);
+  margin: 0;
+}
+
+.App{
+  height: 100vh;
+  overflow: auto;
+  background: linear-gradient(225deg, rgba(0,145,208,1) 0%, rgba(2,152,193,1) 22%, rgba(22,219,38,1) 100%);
+
+  .recipe__app{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4em;
+    background: -webkit-linear-gradient(30deg, rgba(46,158,159,1) 0%, rgba(235,255,33,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 10px;
+  }
+
+  .search__form{
+    min-height: 10vh;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+  }
+
+  .search__bar{
+    width: 50%;
+    border: none;
+    padding: 15px;
+    outline: none;
+  }
+
+  .search__button{
+    cursor: pointer;
+    background: linear-gradient(30deg, rgba(46,158,159,1) 0%, rgba(235,255,33,1) 100%);
+    border: none;
+    padding: 15px 20px;
+    color: white;
+    outline: none;
+    opacity: 0.9;
+
+    &:hover{
+      opacity: 1;
+    }
+  }
+}
+
+.recipes__wraper{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  text-align: center;
+  .recipes__loading{
+    font-size: 1.5em;
+  }
+}
